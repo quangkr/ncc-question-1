@@ -126,6 +126,16 @@ body {
   }
 }
 
+.page-footer {
+  border-top: 1px solid #555;
+}
+
+.footer-content {
+  color: #333;
+  margin: 2rem 0 2rem 4rem;
+}
+
+
 @media only screen and (min-width: 992px) {
 
   .page-container {
