@@ -16,10 +16,36 @@
   </head>
 
   <body>
+
+    <svg
+      aria-hidden="true"
+      style="position: absolute; width: 0; height: 0; overflow: hidden;"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+
+      <defs>
+
+      <symbol id="icon-keyboard_backspace" viewBox="0 0 24 24">
+      <path d="M21 11.016v1.969h-14.156l3.563 3.609-1.406 1.406-6-6 6-6 1.406 1.406-3.563 3.609h14.156z"></path>
+      </symbol>
+
+      <symbol id="icon-hamburger_menu" viewBox="0 0 24 24">
+      <path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001
+      1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3
+      23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"
+      >
+      </path>
+      </symbol>
+
+      </defs>
+    </svg>
+
     <div class="page-container">
       <nav class="nav-container">
         <div class="nav-menu-toggle">
-          <img src="assets/hamburger.png" >
+          <svg><use xlink:href="#icon-hamburger_menu"></use></svg>
         </div>
         <ul class="nav-menu-container hidden">
           <li class="nav-menu-item"><a href="#">Home</a></li>
@@ -102,7 +128,7 @@
         </section>
 
         <footer class="page-footer">
-          <p class="footer-content">Copyright 2021</p>
+          <p class="footer-content">Copyright&#169; 2021</p>
         </footer>
       </div>
     </div>
