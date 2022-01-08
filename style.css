@@ -64,7 +64,7 @@ body {
   border-bottom: 1px solid #555;
 }
 
-.nav-menu-item a:link, .nav-menu-item a:hover {
+.nav-menu-item a:link, .nav-menu-item a:active, .nav-menu-item a:hover, .nav-menu-item a:visited {
   color: #fff;
   text-decoration: none;
 }
@@ -143,8 +143,10 @@ body {
   }
 
   .nav-container {
-    width: 40ch;
+    flex: 0 0 20ch;
     height: 100vh;
+    margin: 0;
+    padding: 0;
   }
 
   .nav-menu-toggle {
@@ -161,6 +163,12 @@ body {
 
   .nav-menu-container.hidden {
     display: block;
+  }
+
+  .nav-menu-item {
+    display: block;
+    font-size: 1rem;
+    padding: 1rem 0 1rem 2rem;
   }
 
 }
