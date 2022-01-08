@@ -28,11 +28,60 @@ body {
 .nav-container {
   width: 100%;
   background-color: #111;
-
+  position: relative;
+  padding: 0 20px;
 }
 
 .nav-menu-toggle {
+  margin: 10px 0;
+  width: 40px;
+  height: 40px;
+}
 
+.nav-menu-toggle img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-menu-container {
+  background-color: #111;
+  position: absolute;
+  top: 60;
+  left: 0;
+  width: 25ch;
+  height: 100vh;
+
+}
+
+.nav-menu-container.hidden {
+  display: none;
+}
+
+.nav-menu-item {
+  width: 100%;
+  display: block;
+  font-size: 1.2rem;
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #555;
+}
+
+.nav-menu-item a:link, .nav-menu-item a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-menu-item:hover {
+  background-color: #777;
+}
+
+.section-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin: 30px auto;
 }
 
 @media only screen and (min-width: 992px) {
